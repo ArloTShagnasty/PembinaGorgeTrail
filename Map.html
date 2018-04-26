@@ -18,14 +18,15 @@
 			text-align:center
 		}
 
+
 		#bottomdiv {
 			width: 80%;
-			height: 75%;
-			margin-left: 20%;
-			position:fixed;
-			text-align:left
+			height: 15%;
+			margin:10px auto;
+			display:inline-block
+			font-family: Verdana, sans-serif;
+			text-shadow: 2px 2px 2px #000000;
 		}
-
 
 		#map {
 			width: 80%;
@@ -40,12 +41,19 @@
 			margin:10px auto;
 			display:inline-block
 			font-family: Verdana, sans-serif;
+			text-shadow: 4px 4px 4px #000000;
 		}
 
 		body {
 			background-image: url("https://arlotshagnasty.github.io/PembinaGorgeTrail/Background.jpg");
 			background-color: #cccccc;
 		}
+
+		.shadow {
+			-moz-box-shadow: 0 0 30px 5px #000000;
+			-webkit-box-shadow: 0 0 30px 5px #000000;
+		}
+
     </style>
   </head>
   <body>
@@ -60,7 +68,9 @@
 			</center>
 			</div>
 
-    <div id="map" />
+ 
+	    <div class="shadow" id="map" />
+
     </div>
     <script>
 
